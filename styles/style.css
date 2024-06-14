@@ -56,6 +56,7 @@ table {
 
 --Green200: hsl(148, 38%, 91%);
 --Green600: hsl(169, 82%, 27%);
+--green800: hsl(171, 83%,14%);
 --Red: hsl(0, 66%, 54%);
 
 /* ### Neutral */
@@ -69,13 +70,28 @@ h1 {
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
+input:hover {
+    cursor: pointer;
+    border-color: var(--Green600);
+}
+.query-divone:hover, .query-divtwo:hover,msg:hover {
+    cursor: pointer;
+    border-color: var(--Green600);
+}
 input[type=text] {
     width: 96%;
     height: 2rem;
     border-radius: 0.3rem;
-    margin: 0.5rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
     border-width: thin;
 }
+.labels {
+    margin-top: 1rem;
+}
+input[type=text]:focus{
+    outline: 1px solid var(--Green600);     /* oranges! yey */
+  }
+
 p {
     margin-bottom: 0.8rem;
 }
@@ -86,7 +102,7 @@ label,p {
 .card {
     padding: 1rem;
     width: 15rem;
-    height: 46rem;
+    height: 47rem;
     margin: 1.5rem auto 1rem auto;
     background-color: white;
     border-radius: 1rem;
@@ -113,13 +129,20 @@ margin-bottom: 1rem;
     font-size: 0.8rem;
     line-height: 1.2rem;
 }
-.msg input {
-height: 11rem;
+.msg textarea:hover{
+    cursor: pointer;
+    border-color: var(--green800);
 }
+
+.msg textarea{ 
+    width: 100%;
+    height: 11rem;
+     margin-top: 1rem; border-radius: 8px; color: black; font-size: 16px; white-space: break-spaces; }
 .consent {
     display: flex;
+    margin-bottom: 1rem;
 }
-input[type=submit] {
+button[type=submit] {
     background-color: var(--Green600);
     border-width: thin;
     width: 100%;
@@ -127,10 +150,22 @@ input[type=submit] {
     border-radius: 0.3rem;
     color: white;
 }
+button[type=submit]:hover {
+    cursor: pointer;
+    background-color: var(--green800);
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Javascript interaction */
+.span-required {
+    display: none;
+    font-size: 0.7rem;
+    color:red;
+    
 }

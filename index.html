@@ -14,36 +14,52 @@
 <body>
 <div class="card">
   <h1>Contact Us</h1>
-  <form>
-    <label for="fname">First name</label><br>
-    <input type="text" id="fname" name="fname"><br>
+  <form id="form">
+    <div>
+      <label class="labels" for="fname">First name</label><br>
+      <input class="inputs required" type="text" id="fname" name="fname" maxlength="45" oninput="nameValidate()" ><br>
+      <span class="span-required">This field is required</span>
+    </div>
 
-    <label for="lname">Last name</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <div>
+      <label class="labels"  for="lname">Last name</label><br>
+      <input class="inputs required" type="text" id="lname" name="lname"maxlength="45" oninput="lastNameValidate()"><br>
+      <span class="span-required">This field is required</span>
+    </div>
 
-    <label for="lname">Email Address</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <div>
+    <label class="labels"  for="lname">Email Address</label><br>
+    <input class="inputs required" type="text" id="lname" name="lname" maxlength="45" oninput="emailValidate()"><br>
+    <span class="span-required">Please enter a valid email adress</span>
+    </div>
 
     <div>
       <p>Query Type</p>
       <div class="query-divone">
-        <input type="radio" id="html" name="fav_language" value="HTML">
+        <input class="inputs required" type="radio" id="html" name="fav_language" value="HTML">
         <label for="html">General Enquiry</label><br>
       </div>
       <div class="query-divtwo">
-        <input type="radio" id="css" name="fav_language" value="CSS">
+        <input class="inputs required" type="radio" id="css" name="fav_language" value="CSS">
         <label for="css">Support Request</label><br>
       </div>
+      <span class="span-required">This field is required</span>
     </div>
+
     <div class="msg">
       <label for="lname">Message</label><br>
-      <input type="text" id="lname" name="lname"><br>
+      <textarea class="inputs required"id="story" name="story" rows="5" cols="33" required maxlength="45">
+      
+        </textarea>
+        
     </div>
       <div class="consent">
-        <input type="checkbox" id="consent" name="consent" value="Bike">
+        <input class="inputs required" type="checkbox" id="consent" name="consent" value="Bike">
         <label for="consent"> I consent to being contacted by the team</label><br>
+        <span class="span-required">This field is required</span>
       </div>
-      <input type="submit" value="Submit">
+      <button type="submit" value="Submit" id="submit">Submit</button>
+
   </form>
 </div>
   <!-- Contact Us
@@ -79,4 +95,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script type="text/javascript" src="script/script.js"></script>
 </html>
