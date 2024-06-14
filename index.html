@@ -3,20 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<div class="card">
+  <h1>Contact Us</h1>
+  <form>
+    <label for="fname">First name</label><br>
+    <input type="text" id="fname" name="fname"><br>
 
-  Contact Us
+    <label for="lname">Last name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="lname">Email Address</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <div>
+      <p>Query Type</p>
+      <div class="query-divone">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">General Enquiry</label><br>
+      </div>
+      <div class="query-divtwo">
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">Support Request</label><br>
+      </div>
+    </div>
+      <label for="lname">Message</label><br>
+      <input type="text" id="lname" name="lname"><br>
+
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+  </form>
+</div>
+  <!-- Contact Us
 
   First Name
   This field is required
@@ -42,7 +68,7 @@
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  Thanks for completing the form. We'll be in touch soon! -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
