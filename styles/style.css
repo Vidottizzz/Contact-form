@@ -102,7 +102,7 @@ label,p {
 .card {
     padding: 1rem;
     width: 15rem;
-    height: 47rem;
+    height: 49rem;
     margin: 1.5rem auto 1rem auto;
     background-color: white;
     border-radius: 1rem;
@@ -167,5 +167,6 @@ button[type=submit]:hover {
     display: none;
     font-size: 0.7rem;
     color:red;
+    margin-bottom: 0.4rem;
     
 }

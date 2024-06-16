@@ -2,7 +2,17 @@ const form = document.getElementById("form");
 const campos = document.querySelectorAll(".required");
 const spans = document.querySelectorAll(".span-required");
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+const radios = document.querySelectorAll('input[name="fav_language"]');
+const htmlRadio1 = document.getElementById('html');
+const cssRadio2 = document.getElementById('css');
 
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate();
+    lastNameValidate();
+    emailValidate();
+})
 function setError(index) {
 campos[index].style.border = '1px solid #e63636';
 spans[index].style.display = 'block';
@@ -39,3 +49,18 @@ function emailValidate() {
             removeError(2);
         }
     }
+
+  function radioValidate() {
+    // radio1.checked).size() > 0
+       if(!(htmlRadio1.checked || cssRadio2.checked))
+       {
+        setError(3);
+       }
+       else {
+        removeError(3);
+       }
+    }
+
+        
+
+    
