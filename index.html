@@ -15,39 +15,43 @@
 <div class="card">
   <h1>Contact Us</h1>
   <form id="form">
-    <div>
-      <label class="labels" for="fname">First name</label><br>
+    <div class="flex">
+      <div>
+      <label class="labels" for="fname">First name *</label><br>
       <input class="inputs required" type="text" id="fname" name="fname" maxlength="45" oninput="nameValidate()" ><br>
       <span class="span-required">This field is required</span>
+      </div>
+  
+      <div class="lastname-div">
+        <label class="labels"  for="lname">Last name *</label><br>
+        <input class="inputs required" type="text" id="lname" name="lname"maxlength="45" oninput="lastNameValidate()"><br>
+        <span class="span-required">This field is required</span>
+      </div>
     </div>
 
-    <div>
-      <label class="labels"  for="lname">Last name</label><br>
-      <input class="inputs required" type="text" id="lname" name="lname"maxlength="45" oninput="lastNameValidate()"><br>
-      <span class="span-required">This field is required</span>
-    </div>
-
-    <div>
-    <label class="labels"  for="lname">Email Address</label><br>
+    <div class="email-div">
+    <label class="labels"  for="lname">Email Address *</label><br>
     <input class="inputs required" type="text" id="lname" name="lname" maxlength="45" oninput="emailValidate()"><br>
     <span class="span-required">Please enter a valid email adress</span>
     </div>
 
     <div>
-      <p>Query Type</p>
-      <div class="query-divone">
+      <p>Query Type *</p>
+      <div class="query-div">
+        <div class="query-divone">
         <input class="inputs required" type="radio" id="html" name="fav_language" value="HTML" >
         <label for="html">General Enquiry</label><br>
-      </div>
-      <div class="query-divtwo">
-        <input class="inputs required" type="radio" id="css" name="fav_language" value="CSS" >
-        <label for="css">Support Request</label><br>
+        </div>
+        <div class="query-divtwo">
+          <input class="inputs required" type="radio" id="css" name="fav_language" value="CSS" >
+          <label for="css">Support Request</label><br>
+        </div>
       </div>
       <span id="query" class="span-required">Please select a query type</span>
     </div>
 
     <div class="msg">
-      <label for="lname">Message</label><br>
+      <label for="lname">Message *</label><br>
       <textarea class="inputs required" id="story" name="story" rows="5" cols="33" required maxlength="45">
       
         </textarea>
@@ -55,7 +59,7 @@
     </div>
       <div class="consent">
         <input class="inputs required" type="checkbox" id="consent" name="consent" value="Bike">
-        <label for="consent"> I consent to being contacted by the team</label><br>
+        <label for="consent"> I consent to being contacted by the team *</label><br>
         </div>
         <span class="span-required" id="consent-span">To submit this form, please consent to being contacted</span>
         <button type="submit" value="Submit" id="submit" >Submit</button>
