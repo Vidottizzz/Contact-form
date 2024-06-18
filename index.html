@@ -43,12 +43,12 @@
         <input class="inputs required" type="radio" id="css" name="fav_language" value="CSS" >
         <label for="css">Support Request</label><br>
       </div>
-      <span class="span-required">Please select a query type</span>
+      <span id="query" class="span-required">Please select a query type</span>
     </div>
 
     <div class="msg">
       <label for="lname">Message</label><br>
-      <textarea class="inputs required"id="story" name="story" rows="5" cols="33" required maxlength="45">
+      <textarea class="inputs required" id="story" name="story" rows="5" cols="33" required maxlength="45">
       
         </textarea>
         
@@ -56,9 +56,9 @@
       <div class="consent">
         <input class="inputs required" type="checkbox" id="consent" name="consent" value="Bike">
         <label for="consent"> I consent to being contacted by the team</label><br>
-        <span class="span-required">This field is required</span>
-      </div>
-      <button type="submit" value="Submit" id="submit"  onclick="radioValidate()">Submit</button>
+        </div>
+        <span class="span-required" id="consent-span">To submit this form, please consent to being contacted</span>
+        <button type="submit" value="Submit" id="submit" >Submit</button>
 
   </form>
 </div>

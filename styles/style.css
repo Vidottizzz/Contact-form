@@ -102,7 +102,7 @@ label,p {
 .card {
     padding: 1rem;
     width: 15rem;
-    height: 49rem;
+    height: 50.5rem;
     margin: 1.5rem auto 1rem auto;
     background-color: white;
     border-radius: 1rem;
@@ -118,6 +118,9 @@ margin-bottom: 1rem;
 .query-divone label,input {
    margin-top: 0.5rem;
 }
+#query {
+    margin-top: -0.5rem;
+}
 .query-divone input, .query-divtwo input{
     margin-left: 1.4rem;
 }
@@ -128,6 +131,9 @@ margin-bottom: 1rem;
     margin-left: 0.8rem;
     font-size: 0.8rem;
     line-height: 1.2rem;
+}
+#consent-span {
+    margin-top: -0.5rem;
 }
 .msg textarea:hover{
     cursor: pointer;
